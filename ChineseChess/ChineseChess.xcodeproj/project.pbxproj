@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		423381D80836935A6E9A0D8D /* Pods_ChineseChess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2230DA2D05560831F6ABD1E3 /* Pods_ChineseChess.framework */; };
+		84A00DA0228A9CC6006A9DAF /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A00D9F228A9CC6006A9DAF /* SnapKit.framework */; };
 		8596C0282154D71500F85077 /* Vault.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8596C0272154D71500F85077 /* Vault.txt */; };
 		A70765F21F94E1A200FA6A43 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70765F11F94E1A200FA6A43 /* GameVC.swift */; };
 		A70765F61F94E1E600FA6A43 /* ChessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70765F51F94E1E600FA6A43 /* ChessVC.swift */; };
@@ -111,8 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0960C69523E81DB1C0565640 /* Pods-ChineseChess.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChineseChess.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChineseChess/Pods-ChineseChess.release.xcconfig"; sourceTree = "<group>"; };
-		2230DA2D05560831F6ABD1E3 /* Pods_ChineseChess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChineseChess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A00D9F228A9CC6006A9DAF /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		8596C0272154D71500F85077 /* Vault.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vault.txt; sourceTree = "<group>"; };
 		A70765F11F94E1A200FA6A43 /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		A70765F51F94E1E600FA6A43 /* ChessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessVC.swift; sourceTree = "<group>"; };
@@ -184,7 +183,6 @@
 		A7E7ACFC1F91DE8E00B29C5A /* UIButton+Golden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Golden.swift"; sourceTree = "<group>"; };
 		A7EB7BB91FE419F200AA903A /* Value+Mutating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Value+Mutating.swift"; sourceTree = "<group>"; };
 		A7FD59BF2012D859006C18C2 /* HistoryBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryBoardController.swift; sourceTree = "<group>"; };
-		BBACABA43398033918CA7F83 /* Pods-ChineseChess.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChineseChess.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChineseChess/Pods-ChineseChess.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,27 +190,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A00DA0228A9CC6006A9DAF /* SnapKit.framework in Frameworks */,
 				A75AB91D206C8C1B00FA7B1F /* Luna.framework in Frameworks */,
-				423381D80836935A6E9A0D8D /* Pods_ChineseChess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3B27F5811E81FBD4FD30BE92 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BBACABA43398033918CA7F83 /* Pods-ChineseChess.debug.xcconfig */,
-				0960C69523E81DB1C0565640 /* Pods-ChineseChess.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		47BE21EC891108117BF7D5F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2230DA2D05560831F6ABD1E3 /* Pods_ChineseChess.framework */,
+				84A00D9F228A9CC6006A9DAF /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -497,7 +486,6 @@
 			children = (
 				A7CE55F71F8DC28600641454 /* ChineseChess */,
 				A7CE55F61F8DC28600641454 /* Products */,
-				3B27F5811E81FBD4FD30BE92 /* Pods */,
 				47BE21EC891108117BF7D5F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -567,12 +555,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7CE56071F8DC28600641454 /* Build configuration list for PBXNativeTarget "ChineseChess" */;
 			buildPhases = (
-				77079B9DE0CBFC0FAEA408BA /* [CP] Check Pods Manifest.lock */,
 				A7CE55F11F8DC28600641454 /* Sources */,
 				A7CE55F21F8DC28600641454 /* Frameworks */,
 				A7CE55F31F8DC28600641454 /* Resources */,
-				D23401FE36AABAFEA363FFB0 /* [CP] Embed Pods Frameworks */,
 				A75AB921206C8C1B00FA7B1F /* Embed Frameworks */,
+				84A00DA1228A9CDB006A9DAF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -597,7 +584,7 @@
 					A7CE55F41F8DC28600641454 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1000;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -657,41 +644,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		77079B9DE0CBFC0FAEA408BA /* [CP] Check Pods Manifest.lock */ = {
+		84A00DA1228A9CDB006A9DAF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ChineseChess-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D23401FE36AABAFEA363FFB0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ChineseChess/Pods-ChineseChess-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChineseChess/Pods-ChineseChess-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -883,20 +852,23 @@
 		};
 		A7CE56081F8DC28600641454 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBACABA43398033918CA7F83 /* Pods-ChineseChess.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 355A2TSX74;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ChineseChess/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sulioppa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development_forAll;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ChineseChess/SupportFiles/ChineseChess-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -905,20 +877,23 @@
 		};
 		A7CE56091F8DC28600641454 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0960C69523E81DB1C0565640 /* Pods-ChineseChess.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 355A2TSX74;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DAB2NZFLN5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ChineseChess/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sulioppa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = ios_development_forAll;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ChineseChess/SupportFiles/ChineseChess-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
